@@ -1,0 +1,24 @@
+# CTDTvaGT-Bu-i-2
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+main()
+{	int n,i=0,j,b;
+	int a[100];
+	printf("\n Nhap vao he co so muon chuyen doi :");
+	scanf("%d",&b);
+	printf("\n Nhap vao so nguyen n :");
+	scanf("%d",&n);
+	printf("\n So sau khi chuyen doi la :");
+	do
+	{
+		a[i]=n%b;
+		n=n/b;
+		i++;
+	}while(n!=0);
+	for(j=i-1;j>=0;j--)
+	{
+		printf("%d",a[j]);
+	}
+	getch();
+}
